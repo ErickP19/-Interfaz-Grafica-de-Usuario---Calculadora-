@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">
@@ -39,13 +39,18 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="porciento" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="elevacion" pref="0" max="32767" attributes="0"/>
+                                  </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="numero7" min="-2" pref="50" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="numero8" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
                                       <Component id="numero4" min="-2" pref="50" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="numero5" max="32767" attributes="0"/>
@@ -57,30 +62,34 @@
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="numero3" pref="47" max="32767" attributes="0"/>
-                                  <Component id="numero6" max="32767" attributes="0"/>
-                                  <Component id="numero9" alignment="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="numero3" pref="47" max="32767" attributes="0"/>
+                                      <Component id="numero6" max="32767" attributes="0"/>
+                                      <Component id="numero9" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="exponencial" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jButton15" min="-2" pref="50" max="-2" attributes="0"/>
                                   <Component id="divicion" min="-2" pref="50" max="-2" attributes="0"/>
+                                  <Component id="borrar" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="posne" min="-2" pref="50" max="-2" attributes="0"/>
                           <Component id="raiz" min="-2" pref="49" max="-2" attributes="0"/>
                           <Component id="igual" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
-                          <Component id="borrar" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="eliminar" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="posne" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="resultado" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                  <Component id="resultado" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="28" max="32767" attributes="0"/>
+              <EmptySpace pref="24" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -91,8 +100,26 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="resultado" min="-2" pref="39" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="borrar" min="-2" pref="47" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="borrar" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                              <Component id="porciento" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                              <Component id="eliminar" alignment="3" min="-2" pref="48" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="elevacion" min="-2" pref="48" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="exponencial" min="-2" pref="48" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -101,7 +128,7 @@
                   </Group>
                   <Component id="numero9" max="32767" attributes="0"/>
                   <Component id="divicion" alignment="0" max="32767" attributes="0"/>
-                  <Component id="posne" min="-2" pref="48" max="-2" attributes="0"/>
+                  <Component id="posne" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -133,7 +160,7 @@
                   </Group>
                   <Component id="igual" min="-2" pref="101" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="70" max="32767" attributes="0"/>
+              <EmptySpace pref="24" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -310,6 +337,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="*"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton15ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="divicion">
       <Properties>
@@ -318,6 +348,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="/"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="divicionActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="posne">
       <Properties>
@@ -337,6 +370,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="&#x221a;"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="raizActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="borrar">
       <Properties>
@@ -347,6 +383,51 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="borrarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="eliminar">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Serif" size="24" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#x2190;"/>
+        <Property name="actionCommand" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eliminarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="porciento">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Serif" size="24" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="%"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="porcientoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="elevacion">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Serif" size="24" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="x&#xb2;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="elevacionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="exponencial">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Serif" size="14" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="1/x"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exponencialActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
